@@ -10,13 +10,13 @@ app.listen(PORT,()=>{
     console.log('Server started successfully')
 })
 
-app.get('/translate/:text/:target', (req,res)=>{
+app.get('/translate/:text/:source/:target', (req,res)=>{
 
     const {text,source, target} = req.params;
 
     translate({
         text: text,
-        source: 'en',
+        source: source,
         target: target
       }, function(result) {
         res.send(result);
