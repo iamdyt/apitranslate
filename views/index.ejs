@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tailwind.minn.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700|Poppins:400,700&display=swap">
     <title>APITranslate</title>
 </head>
 <body class=" bg-blue-800 mx-auto">
     <header class="lg:flex ml-8 mt-4 lg:justify-between ">
         <h1 class="text-white text-4xl ">apiTRANSLATE</h1>
-        <nav class="mt-4 mr-20 px-4 text-center text-white">
+        <!-- <nav class="mt-4 mr-20 px-4 text-center text-white">
             <a href="">Privacy Policy /</a>
             <a href="">License /</a>
             <a href="">Term of service</a>
-        </nav>
+        </nav> -->
     </header>
 
     <main class="mt-32">
@@ -25,8 +26,8 @@
                     <p class="text-white lg:text-left text-center font-bold text-2xl">Reliable and Powerful api for your Business and Application Development Translation needs </p>
                     <p class="text-white lg:text-left text-center lg:text-justify">The API provides access to the Google online machine translation service. It supports more than 100 languages and can translate separate words or complete texts. This api can be embedded in a mobile app or web service for end users.</p>
                     <p class="text-white lg:text-left text-center lg:text-justify mt-6 font-bold text-lg">Real-time JSON API for over 100 Languages</p>
-                    <p class="text-white lg:text-left text-center lg:text-justify mt-6 text-lg">Full Open Source.</p>
-                    <p class="text-white lg:text-left text-center lg:text-justify mt-6 text-lg">Compatible with any application and programming language.</p>
+                    <p class="text-white lg:text-left text-center lg:text-justify mt-6 text-lg"> <i class="fab text-4xl fa-osi"></i>&emsp;Full Open Source.</p>
+                    <p class="text-white lg:text-left text-center lg:text-justify mt-6 text-lg"><i class="fas text-4xl fa-language"></i> &emsp;Compatible with all programming language.</p>
                 </div>
                 <div class="lg:w-1/2">
                    <div class="lg:ml-8">
@@ -43,29 +44,34 @@
             <div class="container rounded-sm mx-auto lg:flex">
                 <div class="lg:w-full">
                     <p class="text-blue-900 text-center text-xl mb-2">Supported Language Codes</p>
-                    <img src="/images/langcodes.png"  alt="">
+                    <p class="overflow-scroll text-justify" > {'af': 'afrikaans', 'sq': 'albanian', 'am': 'amharic', 'ar': 'arabic', 'hy': 'armenian', 'az': 'azerbaijani', 'eu': 'basque', 'be': 'belarusian', 'bn': 'bengali', 'bs': 'bosnian', 'bg': 'bulgarian', 'ca': 'catalan', 'ceb': 'cebuano', 'ny': 'chichewa', 'zh-cn': 'chinese (simplified)', 'zh-tw': 'chinese (traditional)', 'co': 'corsican', 'hr': 'croatian', 'cs': 'czech', 'da': 'danish', 'nl': 'dutch', 'en': 'english', 'eo': 'esperanto', 'et': 'estonian', 'tl': 'filipino', 'fi': 'finnish', 'fr': 'french', 'fy': 'frisian', 'gl': 'galician', 'ka': 'georgian', 'de': 'german', 'el': 'greek', 'gu': 'gujarati', 'ht': 'haitian creole', 'ha': 'hausa', 'haw': 'hawaiian', 'iw': 'hebrew', 'hi': 'hindi', 'hmn': 'hmong', 'hu': 'hungarian', 'is': 'icelandic', 'ig': 'igbo', 'id': 'indonesian', 'ga': 'irish', 'it': 'italian', 'ja': 'japanese', 'jw': 'javanese', 'kn': 'kannada', 'kk': 'kazakh', 'km': 'khmer', 'ko': 'korean', 'ku': 'kurdish (kurmanji)', 'ky': 'kyrgyz', 'lo': 'lao', 'la': 'latin', 'lv': 'latvian', 'lt': 'lithuanian', 'lb': 'luxembourgish', 'mk': 'macedonian', 'mg': 'malagasy', 'ms': 'malay', 'ml': 'malayalam', 'mt': 'maltese', 'mi': 'maori', 'mr': 'marathi', 'mn': 'mongolian', 'my': 'myanmar (burmese)', 'ne': 'nepali', 'no': 'norwegian', 'ps': 'pashto', 'fa': 'persian', 'pl': 'polish', 'pt': 'portuguese', 'pa': 'punjabi', 'ro': 'romanian', 'ru': 'russian', 'sm': 'samoan', 'gd': 'scots gaelic', 'sr': 'serbian', 'st': 'sesotho', 'sn': 'shona', 'sd': 'sindhi', 'si': 'sinhala', 'sk': 'slovak', 'sl': 'slovenian', 'so': 'somali', 'es': 'spanish', 'su': 'sundanese', 'sw': 'swahili', 'sv': 'swedish', 'tg': 'tajik', 'ta': 'tamil', 'te': 'telugu', 'th': 'thai', 'tr': 'turkish', 'uk': 'ukrainian', 'ur': 'urdu', 'uz': 'uzbek', 'vi': 'vietnamese', 'cy': 'welsh', 'xh': 'xhosa', 'yi': 'yiddish', 'yo': 'yoruba', 'zu': 'zulu', 'fil': 'Filipino', 'he': 'Hebrew'}</p>   
                 </div>
                 <div class="lg:w-1/2 text-blue-900 lg:ml-4">
                     <p class=" text-center text-xl  mb-2">Available End-Points</p>
                     <div class="px-4 py-4 rounded-lg lg:overflow-x-hidden overflow-x-scroll">
                         <p class="py-2">#Use this endpoint to translate from one language to another.</p>
-                        <p class="py-2">https://apitranslate.herokuapp.com/translate/text/from/to</p>
-                        <p class="py-2">#Use this endpoint to translate from one language to another.</p>
-                        <p>https://apitranslate.herokuapp.com/translate/text/from/to</p>
+                        <p class="bg-black p-4 text-white">https://apitranslate.herokuapp.com/translate/text/from/to</p>
+                        <p class="py-2">#Use this endpoint to translate from any language to English.</p>
+                        <p class="bg-black p-4 text-white">https://apitranslate.herokuapp.com/translate/text</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="bg-blue-800 text-white p-4">
+        <div class="bg-blue-800 text-white text-xl p-4">
             <span>
-                &copy; apiTranslate 
+                &copy; <span class="date"></span> apiTranslate 
             </span>
             <span class="float-right mr-8">
-               <a href="https://iamdyt.netlify.app"> iamdyt</a>
+               <span>Built with <i class="fas text-red-400 fa-heart"></i> by</span><a href="https://iamdyt.netlify.app"> iamdyt</a>
             </span>
         </div>
     </footer>
+    
+    <script>
+        document.getElementsByClassName('date')[0].innerHTML= new Date().getFullYear()
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"></script>
 </body>
 </html>

@@ -32,14 +32,14 @@ app.get('/translate/:text/:source/:target', (req,res)=>{
 
 })
 
-app.get('/translate/:text/:target', (req,res)=>{
+app.get('/translate/:text/', (req,res)=>{
 
-  const {text,source, target} = req.params;
+  const {text} = req.params;
 
   translate({
       text: text,
       source: 'auto',
-      target: target
+      target: 'en'
     }, function(result) {
       res.send(result);
     });
